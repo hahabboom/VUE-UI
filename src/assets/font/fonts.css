@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "hyk2gj";
+  src: url("hyk2gj.woff2") format("woff2"),
+  url("hyk2gj.woff") format("woff"),
+  url("hyk2gj.ttf") format("truetype"),
+  url("hyk2gj.eot") format("embedded-opentype"),
+  url("hyk2gj.svg") format("svg");
+}

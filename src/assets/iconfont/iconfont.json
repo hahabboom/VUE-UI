@@ -1,0 +1,233 @@
+{
+  "id": "2238408",
+  "name": "全国新一代",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19191987",
+      "name": "器件更换",
+      "font_class": "qijiangenghuan",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "18532292",
+      "name": "全国雷达整体信息概述",
+      "font_class": "quanguoleidazhengtixinxigaishu",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "18531694",
+      "name": "风廓线雷达",
+      "font_class": "fengkuoxianleida",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "18531695",
+      "name": "X波段天气雷达",
+      "font_class": "Xboduantianqileida",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "18531696",
+      "name": "附属设备",
+      "font_class": "fushushebei",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "18531697",
+      "name": "发电机",
+      "font_class": "fadianji",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "18531698",
+      "name": "X波段相控阵雷达",
+      "font_class": "Xboduanxiangkongzhenleida",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "18531699",
+      "name": "毫米波测云雷达",
+      "font_class": "haomiboceyunleida",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "18531700",
+      "name": "痕迹监控",
+      "font_class": "henjijiankong",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "18531701",
+      "name": "发射机",
+      "font_class": "fasheji",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "18531702",
+      "name": "ups",
+      "font_class": "ups",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "18531703",
+      "name": "健康指数",
+      "font_class": "jiankangzhishu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "18531704",
+      "name": "机房",
+      "font_class": "jifang",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "18531705",
+      "name": "关键性能",
+      "font_class": "guanjianxingneng",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "18531706",
+      "name": "空调",
+      "font_class": "kongtiao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "18531707",
+      "name": "气溶胶激光雷达",
+      "font_class": "qirongjiaojiguangleida",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "18531708",
+      "name": "雷达总数",
+      "font_class": "leidazongshu",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "18531709",
+      "name": "机房环境",
+      "font_class": "jifanghuanjing",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "18531710",
+      "name": "湿度",
+      "font_class": "shidu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "18531711",
+      "name": "未标题-19",
+      "font_class": "weibiaoti-19",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "18531712",
+      "name": "监控报警",
+      "font_class": "jiankongbaojing",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "18531713",
+      "name": "天线罩",
+      "font_class": "tianxianzhao",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "18531714",
+      "name": "雷达在线数量",
+      "font_class": "leidazaixianshuliang",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18531715",
+      "name": "业务过程",
+      "font_class": "yewuguocheng",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "18531716",
+      "name": "业务考核雷达数量",
+      "font_class": "yewukaoheleidashuliang",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "18531717",
+      "name": "向下",
+      "font_class": "xiangxia",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "18531718",
+      "name": "温度",
+      "font_class": "wendu",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "18531719",
+      "name": "向上",
+      "font_class": "xiangshang",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "18531720",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "18531721",
+      "name": "新一代天气雷达",
+      "font_class": "xinyidaitianqileida",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "18531722",
+      "name": "疑问",
+      "font_class": "yiwen",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "18531724",
+      "name": "远程控制",
+      "font_class": "yuanchengkongzhi",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    }
+  ]
+}

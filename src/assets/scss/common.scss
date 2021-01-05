@@ -1,0 +1,450 @@
+/* Reset
+------------------------------ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: $text-color;
+  overflow-y: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+/*
+页面滚动条样式（chrome）
+FireFox：直接在元素中以属性定义
+------------------------------ */
+::-webkit-scrollbar { // 滚动条整体部分
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track-piece { // 内层轨道，滚动条中间部分
+  background-color: $base-color-dark;
+}
+
+::-webkit-scrollbar-thumb { // 滑块
+  background: rgba($base-color, .5);
+}
+
+::-webkit-scrollbar-thumb:hover { // 移入滑块
+  background: $base-color;
+}
+
+::-webkit-scrollbar-button { // 滚动条两端的按钮
+}
+
+::-webkit-scrollbar-track { // 外层轨道
+}
+
+::-webkit-scrollbar-corner { // 边角
+}
+
+
+/* 动画
+======================================*/
+@keyframes rotate360deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-360deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+/* DatePicker
+======================================*/
+body .vdp-datepicker__calendar {
+  box-shadow: inset 0 0 8px 1px $base-color;
+  background: none;
+  border: 1px solid $base-color;
+
+  header {
+    .prev:not(.disabled):hover,
+    .next:not(.disabled):hover,
+    .up:not(.disabled):hover {
+      background: none;
+    }
+
+    .prev:after {
+      border-right: 10px solid $base-color;
+    }
+
+    .next:after {
+      border-left: 10px solid $base-color;
+    }
+  }
+
+  .cell {
+    border: none;
+    border-left: 1px solid $base-color;
+    border-top: 1px solid $base-color;
+
+    &.selected {
+      background: $base-color;
+
+      &:hover {
+        background: $base-color;
+      }
+
+      &.error {
+        color: $error;
+      }
+
+      &.normal {
+        color: $success;
+      }
+    }
+
+    &:not(.blank):not(.disabled).day:hover,
+    &:not(.blank):not(.disabled).month:hover,
+    &:not(.blank):not(.disabled).year:hover {
+      border: none;
+      border-left: 1px solid $base-color;
+      border-top: 1px solid $base-color;
+      background: $base-color;
+    }
+  }
+}
+
+
+/* ElementUI
+其变量源代码文件是：var.scss
+======================================*/
+.el-loading-mask {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.el-date-editor {
+  .el-icon-circle-close {
+    display: none;
+  }
+}
+
+.el-button {
+  border-radius: 0;
+}
+
+.el-button--primary {
+  background: RGBA(10, 196, 196, 1);
+  border-color: RGBA(10, 196, 196, 1);
+
+  &:focus, &:active, &:hover {
+    background-color: $base-color;
+    border-color: $base-color;
+  }
+}
+
+
+.el-input__inner {
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid $base-color;
+  border-radius: 0;
+  background-color: unset;
+  color: white;
+}
+
+.el-input__suffix {
+  .el-input__icon {
+    line-height: 34px;
+  }
+}
+
+.el-range-input {
+  background: none;
+}
+
+.el-date-editor {
+  .el-range-separator {
+    color: white;
+    line-height: 26px;
+  }
+
+  .el-range-input {
+    color: white;
+  }
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: $base-color;
+}
+
+.el-form-item.is-success .el-input__validateIcon {
+  color: $base-color;
+}
+
+/* Reset element-ui
+------------------------------ */
+.site-wrapper {
+  .el-pagination {
+    margin-top: 15px;
+    text-align: right;
+  }
+}
+
+/* Input */
+.el-input__inner {
+  border-radius: unset;
+}
+
+/* Button */
+.el-button {
+  border-radius: unset;
+}
+
+.el-button--primary {
+  background: rgba(26, 160, 236, .8);
+  border-color: rgba(26, 160, 236, .8);
+
+  &:hover {
+    background: rgba(26, 160, 236, 1);
+    border-color: rgba(26, 160, 236, 1);
+  }
+}
+
+
+// 下拉菜单
+.el-select-dropdown {
+  background-color: $base-bg;
+  border-color: $base-bg-light;
+
+  &__item {
+    color: #fff;
+  }
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: $base-bg-light;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+  border-bottom-color: $base-bg;
+}
+
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color: $base-color;
+}
+
+.el-select-dropdown__item.selected {
+  color: white;
+}
+
+
+// 日期选择器
+.el-picker-panel {
+  background: $base-bg;
+  border-color: $base-bg-light;
+  color: white;
+}
+
+.el-picker-panel__icon-btn {
+  color: white;
+}
+
+.el-date-table th {
+  color: white;
+}
+
+.el-date-table td.in-range div,
+.el-date-table td.in-range div:hover,
+.el-date-table.is-week-mode .el-date-table__row.current div,
+.el-date-table.is-week-mode .el-date-table__row:hover div {
+  background-color: $base-bg-light;
+}
+
+.el-date-table td.end-date span, .el-date-table td.start-date span {
+  background-color: $base-color;
+}
+
+.el-date-table td.current:not(.disabled) span {
+  background-color: $base-color;
+}
+
+.el-date-editor .el-range__icon {
+  line-height: 26px;
+}
+
+.el-input__icon {
+  line-height: 34px;
+}
+
+.el-picker-panel__footer {
+  background-color: unset;
+}
+
+
+// 分页
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  color: white;
+}
+
+
+// Table 表格
+.el-table {
+  background: none;
+
+  th {
+    height: 34px;
+    color: white;
+    background-color: $base-color;
+
+    &.is-leaf {
+      border: none;
+    }
+  }
+
+  td {
+    height: 34px;
+    color: white;
+    border: none;
+    background: none;
+  }
+
+  td,
+  th {
+    padding: 0;
+  }
+
+  tr {
+    background: none;
+  }
+
+  .cell {
+    line-height: normal;
+  }
+}
+
+//.el-table--striped .el-table__body tr.el-table__row--striped td {
+//  background-color: $base-color-dark;
+//}
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: $base-color;
+}
+
+.el-table__body tr.hover-row.current-row > td,
+.el-table__body tr.hover-row.el-table__row--striped.current-row > td,
+.el-table__body tr.hover-row.el-table__row--striped > td,
+.el-table__body tr.hover-row > td {
+  background-color: $base-color;
+}
+
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+  height: 0;
+}
+
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+  height: 0;
+}
+
+// 重置斑马纹样式较麻烦：需要填充空数据占位，当无数据时需要处理
+// 使用 CSS 方案解决
+.stripe {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: unset;
+
+  div {
+    width: 100%;
+    height: 34px;
+
+    &:nth-child(even) {
+      background: $base-color-dark;
+    }
+  }
+}
+
+
+// pagination 分页
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  background: none;
+  border: 1px solid $base-color;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: $base-color;
+}
+
+.el-pagination__total,
+.el-pagination__jump {
+  color: white;
+}
+
+
+// dialog 对话框 && form 表单
+.el-dialog {
+  background: $base-bg;
+}
+
+.el-dialog__title {
+  color: white;
+}
+
+.el-form-item__label {
+  color: white;
+}
+
+.el-radio {
+  color: white;
+}
+
+.el-radio__input.is-disabled + span.el-radio__label {
+  color: $gray;
+}
+
+.el-radio__input.is-disabled.is-checked .el-radio__inner::after {
+  background-color: $gray;
+}
+
+.el-textarea__inner {
+  background-color: $base-bg-light;
+  color: $text-color;
+}
+
+
+// tree 树形控件
+.el-tree {
+  background: $base-color-dark;
+  color: white;
+}
+
+.el-tree-node__content:hover {
+  background: $base-color;
+}
