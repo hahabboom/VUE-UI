@@ -1,5 +1,5 @@
 /**
- * @author Tang
+ * @author hahabboom
  * @date 2020/7/20
  * @Description config of axios
  */

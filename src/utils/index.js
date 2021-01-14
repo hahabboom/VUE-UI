@@ -3,7 +3,7 @@ import router from '@/router'
 import store from '@/store'
 
 /**
- * @author Tang
+ * @author hahabboom
  * @date 2020/7/21
  * @Description 清除登录信息
  */

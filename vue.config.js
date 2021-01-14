@@ -1,5 +1,5 @@
 /**
- * @author Tang
+ * @author hahabboom
  * @date 2020/7/21
  * @Description
  * 相关配置学习参考：
@@ -50,7 +50,7 @@ module.exports = {
   },
   devServer: {
     host: '222.18.149.110',
-    port: 8080,
+    port: 9090,
     open: true, // 自动打开浏览器
     overlay: { // 让浏览器 overlay 同时显示警告和错误
       warnings: true,

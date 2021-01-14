@@ -13,7 +13,14 @@
         </div>
       </div>
     </div>
-    <div class="bottom"></div>
+    <div class="bottom">
+      <div v-for="(item, i) in msgList" :key="i">
+        <div>{{item.time}}</div>
+        <div>{{item.province}}·{{item.station}}</div>
+        <div>{{item.msg}}</div>
+        <a class="link">查看</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,6 +49,19 @@ export default {
           name: '接入数量',
           number: 12
         }
+      ],
+      msgList: [
+        {
+          time: '11:37',
+          province: '川',
+          station: '成都',
+          msg: '有7个关键指标存在异常'
+        }, {
+          time: '11:37',
+          province: '川',
+          station: '成都',
+          msg: '有7个关键指标存在异常'
+        }
       ]
     }
   },
@@ -60,9 +80,9 @@ export default {
 .box{
   width: 100%;
   height: 100%;
-  padding: 15px 10px;
+  padding: 0 10px;
   .top{
-    height: calc(100% - 60px);
+    height: calc(100% - 90px);
     width: 100%;
     padding: 10px 0;
     .top-one{
@@ -110,6 +130,21 @@ export default {
     height: 60px;
     background: #F4F4F4;
     border-left: 3px solid #6AB0B8;
+    >div{
+      height: calc(100% / 2);
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 12px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #6AB0B8;
+      .link{
+        text-decoration: underline;
+        color: #337AB7;
+      }
+    }
   }
 }
 </style>

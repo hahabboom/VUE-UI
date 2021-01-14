@@ -1,5 +1,4 @@
 /**
- * @author Tang
  * @date 2020/7/21
  * @Description
  * 文档：https://router.vuejs.org/zh/
@@ -67,7 +66,6 @@ const mainRoutes = {
 } // 页面入口路由
 
 /**
- * @author Tang
  * @date 2020/7/22
  * @Description 获取当前路由类型
  * @param to 即将进入的目标路由对象
