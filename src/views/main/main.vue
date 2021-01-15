@@ -3,7 +3,7 @@
     class="main"
     element-loading-background="rgba(8, 22, 58, 1)"
     element-loading-spinner="el-icon-loading"
-    element-loading-text="加载中"
+    element-loading-text="正在加载中"
   >
     <template>
       <div class="top">
