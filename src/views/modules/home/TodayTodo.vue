@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <div :class="{active: now === index}" v-for="(item, index) in dataList" v-bind:key="index">
+    <div :class="{active: now === index}" v-for="(item, index) in dataList" v-bind:key="index" v-on:click="checkType($event, index)">
       <span class="iconfont" :class="'icon' + item.icon"></span>
       {{item.name}}
       <div class="mark">{{item.value}}</div>
@@ -66,7 +66,14 @@ export default {
   },
   props: {},
   watch: {},
-  methods: {},
+  methods: {
+    checkType (e, index) {
+      console.log(index)
+      if (index !== this.now) {
+        this.now = index
+      }
+    }
+  },
   computed: {},
   created () {
   },

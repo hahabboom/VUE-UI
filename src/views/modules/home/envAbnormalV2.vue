@@ -2,7 +2,7 @@
 <!--  环境温湿度模块-->
   <div class="env-box">
     <div class="left">
-      <div v-for="(item, i) in iconList" :key="i" class="item" :class="{active: i === now}">
+      <div v-for="(item, i) in iconList" :key="i" class="item" :class="{active: i === now}" v-on:click="checkType($event, i)">
         <div>
           <span class="iconfont" :class="item.icon"></span>
           {{item.name}}
@@ -74,7 +74,14 @@ export default {
   },
   props: {},
   watch: {},
-  methods: {},
+  methods: {
+    checkType (e, index) {
+      console.log(index)
+      if (index !== this.now) {
+        this.now = index
+      }
+    }
+  },
   computed: {},
   created () {
   },

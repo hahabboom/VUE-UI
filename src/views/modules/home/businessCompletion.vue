@@ -2,7 +2,7 @@
 <!--  业务完成情况-->
   <div class="business-box">
     <div class="top">
-      <div v-for="(item, i) in businessData" :class="activeGauge === i ? 'gauge' : ''" :key="i">
+      <div v-for="(item, i) in businessData" :class="activeGauge === i ? 'gauge' : ''" :key="i"  v-on:click="changeGauge(i)">
         <div :id="`health-${i + 4}`" class="chart"></div>
         <div class="score">
           <span>{{item.name}}<span class="iconfont iconyiwen"></span></span>
@@ -122,6 +122,13 @@ export default {
         }]
       }
       myChartOne.setOption(optionOne)
+    },
+    // 切换仪表图下方表格数据
+    changeGauge (index) {
+      if (index !== this.activeGauge) {
+        this.activeGauge = index
+      }
+      this.tableData = this.healthData[this.activeGauge].list
     }
   },
   computed: {},

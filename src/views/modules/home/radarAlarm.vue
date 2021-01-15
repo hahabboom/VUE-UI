@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="left">
-      <div v-for="(item ,i) in dataList" :key="i" :class="{active: i === now}">
+      <div v-for="(item ,i) in dataList" :key="i" :class="{active: i === now}" v-on:click="checkType($event, i)">
         <div class="number">{{item.value}}</div>
         <div>{{item.name}}</div>
       </div>
@@ -55,7 +55,14 @@ export default {
   },
   props: {},
   watch: {},
-  methods: {},
+  methods: {
+    checkType (e, index) {
+      console.log(index)
+      if (index !== this.now) {
+        this.now = index
+      }
+    }
+  },
   computed: {},
   created () {
   },

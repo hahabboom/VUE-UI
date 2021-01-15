@@ -1,7 +1,7 @@
 <template>
   <div class="button-box">
     <div class="left">
-      <div :class="nowIndex === i ? 'btn-click' : ''" v-for="(item, i) in btnList" :key="i">
+      <div :class="nowIndex === i ? 'btn-click' : ''" v-for="(item, i) in btnList" :key="i" v-on:click="checkType($event, i)">
         <span class="iconfont" :class="item.icon"></span>
         <span>{{item.name}}</span>
       </div>
@@ -46,7 +46,13 @@ export default {
   },
   props: {},
   watch: {},
-  methods: {},
+  methods: {
+    checkType (e, index) {
+      if (index !== this.nowIndex) {
+        this.nowIndex = index
+      }
+    }
+  },
   computed: {},
   created () {
   },
@@ -80,6 +86,7 @@ export default {
       font-family: Microsoft YaHei;
       font-weight: bold;
       color: #484848;
+      cursor: pointer;
       .iconfont{
         color: #ADAEC0;
         margin-right: 5px;

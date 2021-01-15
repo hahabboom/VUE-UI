@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%; width: 100%">
     <div class="top">
-      <div v-for="(item, i) in healthData" :class="activeGauge === i ? 'gauge' : ''" :key="i">
+      <div v-for="(item, i) in healthData" :class="activeGauge === i ? 'gauge' : ''" :key="i" v-on:click="changeGauge(i)">
         <div class="title">{{item.value}}台</div>
         <div :id="`health-${i}`" class="chart"></div>
         <div class="score">

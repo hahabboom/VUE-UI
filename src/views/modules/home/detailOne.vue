@@ -27,7 +27,7 @@
           <div slot="body" style="height: 100%;width: 100%">
             <div class="two-box">
               <div class="two-left">
-                <div v-for="(item, i) in rdaHealth" :key="i" :class="healthIndex === i ? 'health-click': ''">
+                <div v-for="(item, i) in rdaHealth" :key="i" :class="healthIndex === i ? 'health-click': ''" v-on:click="checkHealthType($event, i)">
                   <div>{{item.name}}/占比：<span style="font-weight: bold">{{item.number}}/{{item.ratio}}</span></div>
                 </div>
               </div>
@@ -50,7 +50,7 @@
               </div>
               <div class="three-bottom">
                 <div class="three-left">
-                  <div :class="faultIndex === i ? 'item-click' : ''" v-for="(item, i) in faultTotal" :key="i">
+                  <div :class="faultIndex === i ? 'item-click' : ''" v-for="(item, i) in faultTotal" :key="i" v-on:click="checkFaultType($event, i)">
                     <div class="item-inner">
                       <div class="icon" :style="{background: item.color}"></div>
                       <div>{{item.name}}：{{item.number}}/{{item.ratio}}</div>
@@ -216,7 +216,18 @@ export default {
   },
   props: {},
   watch: {},
-  methods: {},
+  methods: {
+    checkHealthType (e, index) {
+      if (index !== this.healthIndex) {
+        this.healthIndex = index
+      }
+    },
+    checkFaultType (e, index) {
+      if (index !== this.faultIndex) {
+        this.faultIndex = index
+      }
+    }
+  },
   computed: {},
   created () {
   },
