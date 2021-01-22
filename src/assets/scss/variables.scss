@@ -1,8 +1,14 @@
 /* 变量定义
 ======================================*/
-$base-color: #1AA0EC;
+//$base-color: #1AA0EC;
+$base-color: #337AB7;
 $base-color-dark: #10618e;
-$base-bg: #020a0f;
+//$base-bg: #020a0f;
+$base-bg: white;
+$base-text-color: #484848;
+// select
+$select-active-item-bg: #f5f7fa;
+$select-active-text-color: #409eff;
 
 $text-color: #C3E9FF;
 $text-color-light: #FEAF64;
@@ -12,7 +18,8 @@ $data-error: #F14E51;
 $data-normal: #67C21F;
 
 
-$base-bg-light: rgba(30, 55, 108, 1);
+//$base-bg-light: rgba(30, 55, 108, 1);
+$base-bg-light: white;
 $base-border: rgba(79, 154, 255, 1);
 $btn-border-light: rgba(51, 255, 240, 1);
 $orange: rgba(255, 87, 34, 1);
@@ -22,3 +29,8 @@ $cyan: rgba(0, 255, 255, 1);
 $error: rgba(238, 80, 68, 1);
 $success: rgba(6, 195, 64, 1);
 
+
+//table
+$table-border-color: #EBEEF5; // table border颜色
+$table-strip-even-bg-color: #FAFAFA; // 2n 斑马纹 偶数背景颜色
+$table-strip-odd-bg-color: #fff; // 2n - 1

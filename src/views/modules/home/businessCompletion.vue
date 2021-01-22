@@ -66,42 +66,30 @@ export default {
       var myChartOne = this.$echarts.init(document.getElementById('health-' + type))
       // 指定图表的配置项和数据
       const m = this.businessData[type - 4].value
-      var optionOne = {
-        title: {
-          text: m + '%\n' + '完成率',
-          x: 'center',
-          y: 'center',
-          textStyle: {
-            fontWeight: 'normal',
-            color: '#4A5968',
-            fontSize: '12'
-          }
-        },
-        legend: {
-          show: false
-        },
-        series: [{
-          name: 'circle',
-          type: 'pie',
-          clockWise: true,
-          radius: ['60%', '90%'],
-          itemStyle: {
-            normal: {
-              label: {
-                show: false
-              },
-              labelLine: {
-                show: false
-              }
+      let optionOne
+      if (type === 6) {
+        optionOne = {
+          title: {
+            text: '未启用',
+            x: 'center',
+            y: 'center',
+            textStyle: {
+              fontWeight: 'normal',
+              color: '#4A5968',
+              fontSize: '12'
             }
           },
-          hoverAnimation: false,
-          data: [{
-            value: m,
-            name: '占比',
+          legend: {
+            show: false
+          },
+          series: [{
+            silent: true,
+            name: 'circle',
+            type: 'pie',
+            clockWise: true,
+            radius: ['60%', '90%'],
             itemStyle: {
               normal: {
-                color: '#F0B557',
                 label: {
                   show: false
                 },
@@ -109,17 +97,84 @@ export default {
                   show: false
                 }
               }
+            },
+            hoverAnimation: false,
+            data: [{
+              value: 100,
+              name: '占比',
+              itemStyle: {
+                normal: {
+                  color: '#F4F4F4',
+                  borderWidth: 1,
+                  borderColor: '#E5E5E5',
+                  label: {
+                    show: false
+                  },
+                  labelLine: {
+                    show: false
+                  }
+                }
+              }
+            }]
+          }]
+        }
+      } else {
+        optionOne = {
+          title: {
+            text: type !== 6 ? m + '%\n' + '完成率' : '未启用',
+            x: 'center',
+            y: 'center',
+            textStyle: {
+              fontWeight: 'normal',
+              color: '#4A5968',
+              fontSize: '12'
             }
-          }, {
-            name: '剩余',
-            value: 100 - m,
+          },
+          legend: {
+            show: false
+          },
+          series: [{
+            silent: true,
+            name: 'circle',
+            type: 'pie',
+            clockWise: true,
+            radius: ['60%', '90%'],
             itemStyle: {
               normal: {
-                color: '#549CF5'
+                label: {
+                  show: false
+                },
+                labelLine: {
+                  show: false
+                }
               }
-            }
+            },
+            hoverAnimation: false,
+            data: [{
+              value: m,
+              name: '占比',
+              itemStyle: {
+                normal: {
+                  color: '#F0B557',
+                  label: {
+                    show: false
+                  },
+                  labelLine: {
+                    show: false
+                  }
+                }
+              }
+            }, {
+              name: '剩余',
+              value: 100 - m,
+              itemStyle: {
+                normal: {
+                  color: type === 4 ? '#549CF5' : '#60BE7B'
+                }
+              }
+            }]
           }]
-        }]
+        }
       }
       myChartOne.setOption(optionOne)
     },

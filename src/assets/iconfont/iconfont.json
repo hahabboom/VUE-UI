@@ -6,6 +6,188 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19574074",
+      "name": "确定",
+      "font_class": "queding",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "19531508",
+      "name": "删除1",
+      "font_class": "shanchu1",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "19531337",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "19531338",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "19531339",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "19248195",
+      "name": "基本概述",
+      "font_class": "jibengaishu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "19248196",
+      "name": "表格",
+      "font_class": "biaoge",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "19248197",
+      "name": "分系统占比统计",
+      "font_class": "fenxitongzhanbitongji",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "19248198",
+      "name": "关联组件故障仿真分析",
+      "font_class": "guanlianzujianguzhangfangzhenfenxi",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "19248199",
+      "name": "分系统报警统计",
+      "font_class": "fenxitongbaojingtongji",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "19248200",
+      "name": "历史数据",
+      "font_class": "lishishuju",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "19248201",
+      "name": "接收机分机",
+      "font_class": "jieshoujifenji",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "19248202",
+      "name": "雷达可疑故障组件",
+      "font_class": "leidakeyiguzhangzujian",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "19248203",
+      "name": "今日关注",
+      "font_class": "jinriguanzhu",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "19248204",
+      "name": "累积痕迹监控统计",
+      "font_class": "leijihenjijiankongtongji",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "19248205",
+      "name": "历史变更分析",
+      "font_class": "lishibiangengfenxi",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "19248206",
+      "name": "故障分析",
+      "font_class": "guzhangfenxi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "19248207",
+      "name": "今日故障告警排行",
+      "font_class": "jinriguzhanggaojingpaihang",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "19248208",
+      "name": "设备运行状态",
+      "font_class": "shebeiyunhangzhuangtai",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "19248209",
+      "name": "历史数据统计",
+      "font_class": "lishishujutongji",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "19248210",
+      "name": "输入信息",
+      "font_class": "shuruxinxi",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "19248211",
+      "name": "综合增值图",
+      "font_class": "zonghezengzhitu",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "19248212",
+      "name": "柱状图",
+      "font_class": "zhuzhuangtu",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "19248213",
+      "name": "疑问",
+      "font_class": "yiwen1",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "19248214",
+      "name": "综合记录",
+      "font_class": "zonghejilu",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "19248215",
+      "name": "实时关键参数",
+      "font_class": "shishiguanjiancanshu",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
       "icon_id": "19191987",
       "name": "器件更换",
       "font_class": "qijiangenghuan",

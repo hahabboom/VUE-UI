@@ -8,9 +8,10 @@
 
 body {
   margin: 0;
-  font-size: 14px;
-  font-family: sans-serif;
-  color: $text-color;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #484848;
   overflow-y: hidden;
 }
 
@@ -166,7 +167,7 @@ body .vdp-datepicker__calendar {
   border: 1px solid $base-color;
   border-radius: 0;
   background-color: unset;
-  color: white;
+  color: $base-text-color;
 }
 
 .el-input__suffix {
@@ -181,12 +182,12 @@ body .vdp-datepicker__calendar {
 
 .el-date-editor {
   .el-range-separator {
-    color: white;
+    color: $base-text-color;
     line-height: 26px;
   }
 
   .el-range-input {
-    color: white;
+    color: $base-text-color;
   }
 }
 
@@ -249,12 +250,17 @@ body .vdp-datepicker__calendar {
   border-bottom-color: $base-bg;
 }
 
+.el-select-dropdown__item {
+  color: $base-text-color;
+}
+
 .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-  background-color: $base-color;
+  background-color: $select-active-item-bg;
 }
 
 .el-select-dropdown__item.selected {
-  color: white;
+  background-color: $select-active-item-bg;
+  color: $select-active-text-color;
 }
 
 
@@ -262,30 +268,11 @@ body .vdp-datepicker__calendar {
 .el-picker-panel {
   background: $base-bg;
   border-color: $base-bg-light;
-  color: white;
+  color: $base-text-color;
 }
 
 .el-picker-panel__icon-btn {
-  color: white;
-}
-
-.el-date-table th {
-  color: white;
-}
-
-.el-date-table td.in-range div,
-.el-date-table td.in-range div:hover,
-.el-date-table.is-week-mode .el-date-table__row.current div,
-.el-date-table.is-week-mode .el-date-table__row:hover div {
-  background-color: $base-bg-light;
-}
-
-.el-date-table td.end-date span, .el-date-table td.start-date span {
-  background-color: $base-color;
-}
-
-.el-date-table td.current:not(.disabled) span {
-  background-color: $base-color;
+  color: $base-text-color;
 }
 
 .el-date-editor .el-range__icon {
@@ -305,107 +292,9 @@ body .vdp-datepicker__calendar {
 .el-pagination.is-background .btn-next,
 .el-pagination.is-background .btn-prev,
 .el-pagination.is-background .el-pager li {
-  color: white;
+  color: $base-text-color;
 }
 
-
-// Table 表格
-.el-table {
-  background: none;
-
-  th {
-    height: 34px;
-    color: white;
-    background-color: $base-color;
-
-    &.is-leaf {
-      border: none;
-    }
-  }
-
-  td {
-    height: 34px;
-    color: white;
-    border: none;
-    background: none;
-  }
-
-  td,
-  th {
-    padding: 0;
-  }
-
-  tr {
-    background: none;
-  }
-
-  .cell {
-    line-height: normal;
-  }
-}
-
-//.el-table--striped .el-table__body tr.el-table__row--striped td {
-//  background-color: $base-color-dark;
-//}
-.el-table--enable-row-hover .el-table__body tr:hover > td {
-  background-color: $base-color;
-}
-
-.el-table__body tr.hover-row.current-row > td,
-.el-table__body tr.hover-row.el-table__row--striped.current-row > td,
-.el-table__body tr.hover-row.el-table__row--striped > td,
-.el-table__body tr.hover-row > td {
-  background-color: $base-color;
-}
-
-.el-table--border::after,
-.el-table--group::after,
-.el-table::before {
-  height: 0;
-}
-
-.el-table__fixed-right::before,
-.el-table__fixed::before {
-  height: 0;
-}
-
-// 重置斑马纹样式较麻烦：需要填充空数据占位，当无数据时需要处理
-// 使用 CSS 方案解决
-.stripe {
-  position: absolute;
-  top: 34px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: unset;
-
-  div {
-    width: 100%;
-    height: 34px;
-
-    &:nth-child(even) {
-      background: $base-color-dark;
-    }
-  }
-}
-
-
-// pagination 分页
-.el-pagination.is-background .btn-next,
-.el-pagination.is-background .btn-prev,
-.el-pagination.is-background .el-pager li {
-  background: none;
-  border: 1px solid $base-color;
-}
-
-.el-pagination.is-background .el-pager li:not(.disabled).active {
-  background-color: $base-color;
-}
-
-.el-pagination__total,
-.el-pagination__jump {
-  color: white;
-}
 
 
 // dialog 对话框 && form 表单
@@ -414,15 +303,15 @@ body .vdp-datepicker__calendar {
 }
 
 .el-dialog__title {
-  color: white;
+  color: $base-text-color;
 }
 
 .el-form-item__label {
-  color: white;
+  color: $base-text-color;
 }
 
 .el-radio {
-  color: white;
+  color: $base-text-color;
 }
 
 .el-radio__input.is-disabled + span.el-radio__label {
@@ -442,9 +331,41 @@ body .vdp-datepicker__calendar {
 // tree 树形控件
 .el-tree {
   background: $base-color-dark;
-  color: white;
+  color: $base-text-color;
 }
 
 .el-tree-node__content:hover {
   background: $base-color;
 }
+
+
+// pagination
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  //background-color: $base-color;
+  color: $base-text-color;
+}
+
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  margin: 0px;
+  border-radius: 0px;
+  border: 1px solid #EBEEF5;
+}
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  background: none;
+  //border: 1px solid $base-color;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: $base-color;
+  color: white;
+}
+
+.el-pagination__total,
+.el-pagination__jump {
+  color: $base-text-color;
+}
+
+
+

@@ -1,23 +1,23 @@
 <template>
   <div class="home">
-    <div class="module-one">
+    <div>
       <button-group></button-group>
     </div>
-    <div class="module-two">
+    <div>
       <base-window width="100%" height="90px" headHeight="0px">
         <div slot="body" style="height: 100%;width: 100%">
           <total-number></total-number>
         </div>
       </base-window>
     </div>
-    <div class="module-three">
+    <div v-show="showAreaFlag">
       <base-window width="100%" height="268px" headHeight="0px">
         <div slot="body" style="height: 100%;width: 100%">
           <detail-one></detail-one>
         </div>
       </base-window>
     </div>
-    <div class="module-four">
+    <div v-show="showAreaFlag">
       <base-window width="100%" height="268px" headHeight="0px">
         <div slot="body" style="height: 100%;width: 100%">
           <detail-one></detail-one>
@@ -128,8 +128,18 @@ import EnvAbnormalV2 from '@/views/modules/home/envAbnormalV2'
 import KeyIndexV2 from '@/views/modules/home/KeyIndexV2'
 import AccAbnormalV2 from '@/views/modules/home/accAbnormalV2'
 export default {
-  name: 'Home', // 复合雷达建立后修改
-  components: { AccAbnormalV2, KeyIndexV2, EnvAbnormalV2, RadarAlarmV2, TraceMonitor, RemoteControl, BusinessCompletion, DetailWindow, DetailOne, TotalNumber, ButtonGroup, AccAbnormal, EnvAbnormal, KeyIndex, RadarAlarm, HealthIndex, TodayTodo }
+  name: 'Home',
+  data () {
+    return {
+      showAreaFlag: true
+    }
+  },
+  components: { AccAbnormalV2, KeyIndexV2, EnvAbnormalV2, RadarAlarmV2, TraceMonitor, RemoteControl, BusinessCompletion, DetailWindow, DetailOne, TotalNumber, ButtonGroup, AccAbnormal, EnvAbnormal, KeyIndex, RadarAlarm, HealthIndex, TodayTodo },
+  mounted () {
+    this.$event.$on('showAreaFlag', (data) => {
+      this.showAreaFlag = data
+    })
+  }
 }
 </script>
 
